@@ -1,0 +1,243 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root{
+ --max-width: 1200px;
+ /* pri color */
+ --pri-color-1: hsl(0, 100%, 74%) ;
+ --pri-color-2: hsl(154, 59%, 51%) ;
+ --accent-color: hsl(248, 32%, 49%);
+ /* neutral */
+ --neutral-color-1: hsl(249, 10%, 26%) ;
+ --neutral-color-2: hsl(246, 25%, 77%);
+ /* fonts */
+ --font-size: 16px;
+ --font-weight-1: 400;
+ --font-weight-2: 500;
+ --font-weight-3: 600;
+ --font-weight-4: 700;
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ line-height: 1.3;
+  background: url('images/bg-intro-desktop.png'), var(--pri-color-1);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  font-size: var(--font-size);
+}
+
+
+  .container{
+ max-width: var(--max-width);
+ padding: 40px;
+ margin: 100px auto;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.words{
+ color: white;
+ padding-left: 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.words h1{
+ font-weight: var(--font-weight-4);
+ margin-bottom: 10px;
+ 
+}
+
+.words p{
+  max-width: 350px;
+}
+
+.btn-one{
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ margin-bottom: 15px;
+ color: white;
+ background-color: var(--accent-color);
+ width: 350px;
+ font-size: var(--font-size);
+ box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+}
+
+
+span{
+ opacity: 50%;
+}
+
+.head{
+ background: white;
+ max-width: 100%;
+ width: 350px;
+ max-height: 100%;
+ height: 450px;
+ box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+ border-radius: 10px;
+
+}
+
+.form{
+ text-align: center;
+ position: relative;
+}
+
+.parentForm{
+  height: 100%;
+  padding-top: 10px;
+}
+
+.firstnamefield{
+  margin-top: 20px;
+}
+
+.icon{
+ width: 20px;
+ position: absolute;
+ right: 0;
+ transform: translate(-40px,20px);
+ display: none;
+}
+
+.iconOne{
+  margin-top: 7px;
+}
+
+.pad{
+ padding: 13px 10px;
+ width: 300px;
+ margin-top: 10px;
+ border-radius: 5px;
+}
+
+.pad-one{
+  margin-top: 20px;
+}
+
+.text{
+ font-size: 13px;
+ color: var(--pri-color-1);
+ text-align: end;
+ padding-right: 30px;
+ display: none;
+ margin-top: 8px;
+ opacity: 100%;
+}
+
+.input-field:hover{
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+.btn-two{
+ text-transform: uppercase;
+ color: white;
+ background-color: var(--pri-color-2);
+ border: none;
+ outline: none;
+ border-radius: 5px;
+ box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+ margin-bottom: 10px;
+ cursor: pointer;
+}
+
+.terms p{
+ font-size: 10px;
+ text-align: center;
+ margin-top: 10px;
+}
+
+.red{
+ color: red;
+}
+
+/* hide */
+ 
+.show-text .email::placeholder{
+ color: red !important;
+}
+
+.show-text input::placeholder{
+ color: transparent;
+}
+
+.show-text .text{
+ display: block;
+}
+
+.show-text .icon{
+ display: block;
+}
+
+.show-text .input-field{
+ border: 2px solid red;
+ border-radius: 5px;
+}
+
+footer{
+  margin-top: 10px;
+}
+
+@media(max-width:767px){
+
+  body{
+    background: url('images/bg-intro-mobile.png'), var(--pri-color-1);
+    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .hero{
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .words{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .head{
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .words h1{
+    margin-bottom: 20px;
+  }
+  
+  .words p{
+  width: 100%;
+  max-width: 100%;
+}
+
+  .btn-one{
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+

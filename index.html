@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+    <!-- words -->
+    <section class="words">
+      <h1>Learn to code by <br> watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </section>
+    <!-- end of words -->
+    
+    <!-- form -->
+    <section class="banner">
+      <article class="try">
+        <button type="button" class="btn-one">Try it free 7 days <span>then $20/mo. thereafter</span></button>
+      </article>
+      <article class="head">
+        <div class="parentForm">
+          <form class="form">
+            <div class="firstnamefield">
+              <img src="images/icon-error.svg" alt="" class="icon iconOne">
+              <input type="text" name="name" id="text" placeholder="First Name" class="input-field pad pad-one Fname">
+              <span class="text">First name cannot be empty</span>
+            </div>
+    
+            <div class="lastnamefield">
+              <img src="images/icon-error.svg" alt="" class="icon iconTwo">
+              <input type="text" name="name" placeholder="Last Name" id="name" class="input-field pad Lname">
+              <span class="text">last name cannot be empty</span>
+            </div>
+    
+            <div class="emailfield">
+              <img src="images/icon-error.svg" alt="" class="icon iconThree">
+              <input type="email" name="name" id="email" placeholder="Email Address" class="input-field pad email">
+              <span class="text">Looks like this is not an email</span>
+            </div>
+    
+            <div class="passwordfield">
+              <img src="images/icon-error.svg" alt="" class="icon iconFour">
+              <input type="password" name="name" id="password" placeholder="Password" class="input-field pad password">
+              <span class="text">password cannot be empty</span>
+            </div>
+    
+            <button type="submit" class="btn-two pad">Claim your free trial</button>
+          </form>
+          <div class="terms">
+            <p>By clicking the button, you are agreeing to our <span class="red">Terms and Services</span></p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--end of form -->
+    </section>
+  </main>
+  
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
